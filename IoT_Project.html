@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <section id="projects-page">
+    <div class="project" id="container_font">
+      <h2>IoT Weather Monitoring Project</h2>
+      <br>
+      <hr>
+      <div class="zoom-within-container">
+        <img class="IoT-image-left" src="src/images/Weather Monitoring System.jpg"
+          alt="Weather Monitoring IoT System" />
+      </div>
+      <br>
+      <p>I had the opoprtunity to work on this project, for my IoT module during Top-Up. The code was written in C++,
+        using Arduino IDE software to code and upload the program onto the microcontroller.</p>
+      <p>The IoT Based Weather Monitoring System uses the following electronic sensors : DHT11, MQ-135, LDR and rain
+        sensor to collect and report weather information to the <a class="black-text"
+          href="https://docs.arduino.cc/hardware/nano-33-iot">Arduino Nano IoT 33</a> microcontroller.
+        Current temperature, humidity, air quality, light intensity and rain conditions data from sensors being uploaded
+        to the Arduino IoT Cloud, for monitoring and analysis.
+      </p>
+      <div class="zoom-within-container">
+        <img class="IoT-image-right" src="src/images/Weather Monitoring System Circuit Diagram.png"
+          alt="Weather Monitoring IoT Diagram" />
+      </div>
+      <br>
+      <p> I used <a class="black-text" href="https://fritzing.org">Fritzing Software</a> to design the wiring diagram
+        for
+        the project, as can be seen above.</p>
+      <p>Fritzing is an excellent open-source platform for teaching, sharing, and prototyping electronic creations. It
+        allowed me to develop components, which I incorporated to the wiring diagram.</p>
+
+
+      <p>Monitoring and observing various weather conditions has been the focus of weather monitoring innovations. The
+        project uses <a class="black-text" href="https://cloud.arduino.cc/">Arduino IoT Cloud</a> application to receive
+        data from sensors for monitoring and analysis. Arduino
+        IoT Cloud facilitates rapid, simple, and secure construction of connected things by users. Arduino IoT Cloud is
+        a web-based platform that facilitates the creation,
+        deployment, and monitoring of IoT projects.</p>
+      <hr>
+      <div class="row, footer-icons">
+        <div class="column, footer-icon">
+          <figure>
+            <img src="src/images/Messages Displayed on Serial Monitor.jpg" alt="Messages Displayed on Serial Monitor"
+              style="width:100%" onclick="myFunction(this);">
+            <figcaption>Messages Displayed on Serial Monitor</figcaption>
+          </figure>
+        </div>
+        <div class="column, footer-icon">
+          <figure>
+            <img src="src/images/Arduino IoT Cloud Dashboard.jpg" alt="Arduino IoT Cloud Dashboard" style="width:100%"
+              onclick="myFunction(this);">
+            <figcaption>Arduino IoT Cloud Dashboard</figcaption>
+          </figure>
+        </div>
+        <div class="column, footer-icon">
+          <figure>
+            <img src="src/images/Temperature & Humidity Sensor Testing.jpg" alt="Temperature & Humidity Sensor Testing"
+              style="width:100%" onclick="myFunction(this);">
+            <figcaption>Temperature &amp; Humidity Sensor Testing</figcaption>
+          </figure>
+        </div>
+        <div class="column, footer-icon">
+          <figure>
+            <img src="src/images/Rain & MQ-135 Data on IoT Cloud.jpg" alt="Rain & MQ-135 Data on IoT Cloud"
+              style="width: 100%" onclick="myFunction(this);">
+          </figure>
+          <figcaption>Rain &amp; MQ-135 Data on IoT Cloud</figcaption>
+        </div>
+      </div>
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+      </div>
+      <hr>
+
+      <p class="sub-text"><a class="project-link button" href="index.html#my-projects">
+          &lt; Go Back</a>
+      </p>
+    </div>
+  </section>
+  <script src="src/app.js"></script>
+</body>
+
+</html>
