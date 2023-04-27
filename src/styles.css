@@ -207,6 +207,7 @@ a {
 
 /* Projects Section */
 .projects-section {
+    border: black solid;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -226,9 +227,7 @@ a {
 }
 
 .project-right {
-    text-align: justify;
     text-align: right;
-    border: black solid;
     padding: 40px;
     margin: 10px;
 }
