@@ -207,6 +207,7 @@ a {
 
 /* Projects Section */
 .projects-section {
+    padding: 60px;
     display: flex;
     flex-direction: column;
     text-align: left;
