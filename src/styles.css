@@ -7,30 +7,11 @@ section {
     background-color: #ffffff;
 }
 
-.contact-container {
-    background-color: #ffffff;
-}
-
-footer {
-    background-color: #1c1d25;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.hero {
+/* Hero Section */
+.hero-section {
     background-color: #1c1d25;
     color: #ffffff;
     height: 100vh;
-    font-size: 40px;
-    padding-bottom: 50px;
-    margin-bottom: auto;
-}
-
-.hero-small {
-    background-color: #1c1d25;
-
-    color: #ffffff;
     font-size: 40px;
     padding-bottom: 50px;
     margin-bottom: auto;
@@ -79,16 +60,21 @@ h3 {
 }
 
 p {
-
     margin: 0;
     font-size: 30px;
     font-weight: 300;
-   
 }
 
-.bio-text {
-    text-align: center;
+a {
+    text-decoration: none;
+    color: white;
 }
+
+.logo {
+    height: 130px;
+    padding: 10px;
+}
+
 .hero-area {
     display: flex;
     height: 100%;
@@ -102,54 +88,91 @@ p {
 
 }
 
-.icons {
+.social-icons {
     margin: 20px;
 }
 
-.button {
-    text-align: center;
-    width: 250px;
+.social-icon {
+    margin: 20px;
+}
+
+.skill-icons {
     background-color: #1c1d25;
-    box-shadow: 10px 10px 20px rgb(250, 213, 196);
-    font-size: 20px;
-    font-weight: 300px;
-    padding: 5px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+
 }
 
-.button:hoover {
-    background-color: #ff715b;
-}
-
-.button:active {
-    background-color: lightgray;
-    color: #C40000;
-}
-
-#submit-button {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    background-color: #dddde1;
+.skill-icon {
     color: #1c1d25;
-    padding: 5px;
+    border: #ff715b solid;
+    background-color: rgb(250, 213, 196);
+    margin: 0.25rem;
+    align-items: center;
+    padding: 0.25rem;
+    box-shadow: 2px 2px 5px rgb(250, 213, 196);
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 0.8rem;
 }
 
-.logo {
-    height: 130px;
-    padding: 10px;
+.hamburger {
+    display: none;
 }
 
-.icon {
-    margin: 20px;
+.hamburger:focus {
+    outline: 0;
 }
 
-.sub-section {
+@media only screen and (max-width: 1000px) {
+
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+
+/* Bio Section */
+.bio-section {
     display: flex;
     justify-content: space-around;
     padding: 60px;
 }
 
-.image {
+.bio-text {
+    justify-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.bio-image {
 
     float: left;
     width: 200px;
@@ -157,23 +180,36 @@ p {
     box-shadow: 10px 10px 20px rgb(250, 213, 196);
     margin-right: 30px;
 }
-.bio-text {
-    justify-items: center;
-    text-align: justify;
-    padding: 20px;
+
+.bio-qualification,
+.bio-name {
+    color: #ff715b;
 }
 
-.project {
-    border: black solid;
-    padding: 40px;
-    margin: 10px;
+.bio-cv-container {
+    margin: 50px;
 }
 
-.project-right {
-    text-align: right;
-    border: black solid;
-    padding: 40px;
-    margin: 10px;
+.bio-cv {
+    color: #1c1d25;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: underline #ff715b;
+    box-shadow: 10px 10px 20px rgb(250, 213, 196);
+    padding: 10px;
+}
+
+.bio-uni {
+    color: #1c1d25;
+    text-decoration: underline #ff715b;
+    text-decoration-style: solid;
+}
+
+/* Projects Section */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .projects-container {
@@ -182,21 +218,49 @@ p {
     justify-content: space-around;
 }
 
-.sub-section-projects {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.project {
+    text-align: justify;
+    border: black solid;
+    padding: 40px;
+    margin: 10px;
 }
 
-.sub-text {
-    padding: 5px;
+.project-right {
+    text-align: justify;
+    text-align: right;
+    border: black solid;
+    padding: 40px;
+    margin: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+/* Within Container */
+.zoom-within-container {
+    height: 300px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.zoom-within-container img {
+    transition: transform .5s ease;
+}
+
+.zoom-within-container:hover img {
+    transform: scale(1.7);
+}
+
+.IoT-image-left {
+    float: left;
+    padding-bottom: 30px;
+    margin: 100px;
+    width: 300px;
+}
+
+.IoT-image-right {
+    float: right;
+    padding-bottom: 30px;
+    margin: 100px;
+    width: 300px;
 }
 
 .project-image {
@@ -207,6 +271,18 @@ p {
     width: 300px;
     margin-right: 150px;
     margin-top: 60px;
+    border-radius: 50px;
+
+}
+
+.project-image-right {
+    float: right;
+    top: 20px;
+    margin: 30px;
+    box-shadow: 5px 5px 20px rgb(250, 213, 196);
+    width: 300px;
+    margin-top: 60px;
+    border-radius: 50px;
 
 }
 
@@ -219,10 +295,17 @@ p {
     border-radius: 50px;
 }
 
-hr {
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+.projects-p-text {
+    padding: 5px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.project-black-text {
+    color: #1c1d25;
+    text-decoration: underline #ff715b;
 }
 
 .project-link {
@@ -231,12 +314,104 @@ hr {
     color: #ff715b;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.button {
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    background-color: #1c1d25;
+    box-shadow: 10px 10px 20px rgb(250, 213, 196);
+    font-size: 20px;
+    font-weight: 300px;
+    padding: 5px;
 }
 
-.footer-container {
+@media only screen and (max-width: 1000px) {
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Get in touch Section */
+
+.contact-section {
+    padding: 20px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+
+}
+
+label {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+input,
+textarea {
+    margin: 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+hr {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.submit-button {
+    text-align: center;
+    width: 75%;
+    background-color: #ff715b;
+    box-shadow: 10px 10px 20px rgb(250, 213, 196);
+    font-size: 15px;
+    font-weight: 300px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.submit-button:hoover {
+    background-color: #ff715b;
+}
+
+.submit-button:active {
+    background-color: lightgray;
+    color: #C40000;
+}
+
+#submit-button {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #dddde1;
+    color: #ff715b;
+    padding: 5px;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #1c1d25;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-section {
     display: flex;
     justify-content: space-around;
     height: auto;
@@ -300,25 +475,7 @@ a {
     align-items: center;
     justify-content: space-around;
 }
-.skill-icons {
-    background-color: #1c1d25;
-    margin: auto;
-    margin-top: 30px;
 
-}
-.skill-icon {
-    color: #1c1d25;
-    border: #ff715b solid ;
-    background-color: rgb(250, 213, 196);
-    margin:0.25rem;
-    align-items: center;
-    padding: 0.25rem;
-    box-shadow: 2px 2px 5px rgb(250, 213, 196);
-    white-space: nowrap;
-    text-decoration: none;
-    font-size: 0.8rem;
-    align-items: center;
-}
 .footer-icon {
     padding: 15px;
     align-items: center;
@@ -335,150 +492,27 @@ a {
     }
 }
 
-.cv-container {
-    margin: 50px;
-}
-
-.cv {
-    color: #1c1d25;
-    font-size: large;
-    font-weight: 600;
-    text-decoration: underline #ff715b;
-    box-shadow: 10px 10px 20px rgb(250, 213, 196);
-    padding: 10px;
-}
-
-.uni {
-    color: #1c1d25;
-    text-decoration: underline #ff715b;
-    text-decoration-style: solid;
-}
-
-.qualification,
-.name {
-    color: #ff715b;
-}
-
-label {
-    width: 100%;
-    display: inline-block;
-    text-align: left;
-}
-
-form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-
-}
-
-.sub-section-contact {
-    padding: 80px;
-    text-align: center;
-}
-
-fieldset {
-    border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
-}
-
-input,
-textarea {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-}
-
-.hamburger {
-    display: none;
-}
-
-.hamburger:focus {
-    outline: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-   
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    }
-
-    ul {
-        display: none;
-        background-color: #2b2c38;
-        margin: 0ppx;
-    }
-
-    ul.show {
-        display: block;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #2b2c38;
-    }
-
-    .logo {
-        display: none;
-    }
-}
-
-#container_font {
+/* IoT Project Page  */
+#iot-container_font {
     font-family: 'Alkatra', cursive, sans-serif;
     text-align: left;
 }
 
-/* Within Container */
-.zoom-within-container {
-    height: 300px;
-    /* [1.1] Set it as per your need */
-    overflow: hidden;
-    /* [1.2] Hide the overflowing of child elements */
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.zoom-within-container img {
-    transition: transform .5s ease;
-}
-
-.zoom-within-container:hover img {
-    transform: scale(1.7);
-}
-
-.IoT-image-left {
-    float: left;
-    padding-bottom: 30px;
-    margin: 100px;
-    width: 300px;
-}
-
-.IoT-image-right {
-    float: right;
-    padding-bottom: 30px;
-    margin: 100px;
-    width: 300px;
-}
-
-#container_thankyou {
+/* Thank you Project Page  */
+#thank-you-container_font {
     font-family: 'Alkatra', cursive, sans-serif;
     text-align: center;
-    height: 90vh;
+    height: 98vh;
 }
 
-#projects-page {
+#project-page {
     box-sizing: border-box;
     border: 50px solid #2b2c38;
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .row {
@@ -525,17 +559,4 @@ textarea {
     color: white;
     font-size: 35px;
     cursor: pointer;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-figcaption {
-    text-align: center;
-}
-
-.black-text {
-    color: #1c1d25;
-    text-decoration: underline #ff715b;
 }
