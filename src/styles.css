@@ -107,11 +107,11 @@ a {
 .skill-icon {
     color: #1c1d25;
     border: #ff715b solid;
-    background-color: rgb(250, 213, 196);
+    background-color: #fad5c4;
     margin: 0.25rem;
     align-items: center;
     padding: 0.25rem;
-    box-shadow: 2px 2px 5px rgb(250, 213, 196);
+    box-shadow: 2px 2px 5px #fad5c4;
     white-space: nowrap;
     text-decoration: none;
     font-size: 0.8rem;
@@ -177,7 +177,7 @@ a {
     float: left;
     width: 200px;
     border-radius: 25px;
-    box-shadow: 10px 10px 20px rgb(250, 213, 196);
+    box-shadow: 10px 10px 20px #fad5c4;
     margin-right: 30px;
 }
 
@@ -195,7 +195,7 @@ a {
     font-size: large;
     font-weight: 600;
     text-decoration: underline #ff715b;
-    box-shadow: 10px 10px 20px rgb(250, 213, 196);
+    box-shadow: 10px 10px 20px #fad5c4;
     padding: 10px;
 }
 
@@ -207,6 +207,7 @@ a {
 
 /* Projects Section */
 .projects-section {
+    background-color: #fad5c44f;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -220,15 +221,16 @@ a {
 }
 
 .project {
-    border: black solid;
     text-align: justify;
+    border: #000000 solid;
     padding: 40px;
     margin: 10px;
 }
 
 .project-right {
-    border: black solid;
+    text-align: justify;
     text-align: right;
+    border: #000000 solid;
     padding: 40px;
     margin: 10px;
 }
@@ -267,7 +269,7 @@ a {
     float: right;
     top: 20px;
     margin: 30px;
-    box-shadow: 5px 5px 20px rgb(250, 213, 196);
+    box-shadow: 5px 5px 20px #fad5c4;
     width: 300px;
     margin-right: 150px;
     margin-top: 60px;
@@ -279,7 +281,7 @@ a {
     float: right;
     top: 20px;
     margin: 30px;
-    box-shadow: 5px 5px 20px rgb(250, 213, 196);
+    box-shadow: 5px 5px 20px #fad5c4;
     width: 300px;
     margin-top: 60px;
     border-radius: 50px;
@@ -290,7 +292,7 @@ a {
     float: left;
     top: 20px;
     margin: 30px;
-    box-shadow: 5px 5px 20px rgb(250, 213, 196);
+    box-shadow: 5px 5px 20px #fad5c4;
     width: 300px;
     border-radius: 50px;
 }
@@ -319,7 +321,7 @@ figcaption {
     align-items: center;
     width: 250px;
     background-color: #1c1d25;
-    box-shadow: 10px 10px 20px rgb(250, 213, 196);
+    box-shadow: 10px 10px 20px #fad5c4;
     font-size: 20px;
     font-weight: 300px;
     padding: 5px;
@@ -377,7 +379,7 @@ hr {
     text-align: center;
     width: 75%;
     background-color: #ff715b;
-    box-shadow: 10px 10px 20px rgb(250, 213, 196);
+    box-shadow: 10px 10px 20px #fad5c4;
     font-size: 15px;
     font-weight: 300px;
     padding: 5px;
@@ -389,7 +391,7 @@ hr {
 }
 
 .submit-button:active {
-    background-color: lightgray;
+    background-color: #d3d3d3;
     color: #C40000;
 }
 
@@ -406,7 +408,7 @@ hr {
 /* Footer Section */
 footer {
     background-color: #1c1d25;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
 }
@@ -556,7 +558,7 @@ footer {
     position: absolute;
     top: 10px;
     right: 15px;
-    color: white;
+    color: #ffffff;
     font-size: 35px;
     cursor: pointer;
 }
